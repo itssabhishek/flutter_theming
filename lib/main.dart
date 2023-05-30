@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Expenses App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0x00098645),
+          seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
       ),
