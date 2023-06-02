@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_theming/models/expense.dart';
+import 'package:flutter_theming/widgets/chart/chart.dart';
 import 'package:flutter_theming/widgets/expense_list/expenses_list.dart';
 import 'package:flutter_theming/widgets/new_expense.dart';
 
@@ -96,7 +97,11 @@ class _ExpensesState extends State<Expenses> {
           const SizedBox(
             height: 10,
           ),
-          const Text('Expense data'),
+          Text(
+            'Expense data',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          Chart(expenses: _registeredExpenses),
           mainScreen,
         ],
       ),
